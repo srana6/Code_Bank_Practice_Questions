@@ -45,18 +45,30 @@ public class EqualityChecking {
         EqualityChecking ec2 = new EqualityChecking(10);
         EqualityChecking ec3 = ec1;
 
+        /**
+         * False
+         */
         System.out.print("When we try ec1 == ec2 ::: ");
         System.out.println(ec1==ec2);
 
+        /**
+         * True
+         */
         System.out.print("When we try ec1 == ec3 ::: ");
         System.out.println(ec1==ec3);
 
+        /**
+         * false, we need to have equal() method implementation
+         */
         System.out.print("When we try ec1.equals(ec2) ::: ");
         System.out.println(ec1.equals(ec2));
 
         EqualityChecking ec4 = new EqualityChecking("Hello");
         EqualityChecking ec5 = new EqualityChecking("Hello");
 
+        /**
+         * false, we need to have equal() method implementation
+         */
         System.out.print("When we try ec4.equals(ec5) ::: ");
         System.out.println(ec4.equals(ec5));
     }
