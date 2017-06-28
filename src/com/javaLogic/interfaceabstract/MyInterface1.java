@@ -5,6 +5,6 @@ package com.javaLogic.interfaceabstract;
  */
 public interface MyInterface1 {
 
-    void xyz();
+    void xyz() throws Exception;
 
 }

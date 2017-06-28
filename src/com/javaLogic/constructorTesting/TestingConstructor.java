@@ -7,6 +7,8 @@ package com.javaLogic.constructorTesting;
 /**
  * Intresting scenario
  * Output --> 10,5,constructor name
+ *
+ * Fields are always instantiated first then the constructor, therefore output 10
  */
 class TestingConstructor1 {
 
@@ -19,6 +21,10 @@ class TestingConstructor1 {
 }
 
 public class TestingConstructor{
+
+    static{
+        System.out.println("First Thing to Execute");
+    }
 
     /**
      * Calling constructor of class1

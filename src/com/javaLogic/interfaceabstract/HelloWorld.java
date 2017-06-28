@@ -14,8 +14,8 @@ public class HelloWorld implements MyInterface {
         System.out.println("ABC");
     }
 
-    public static void main(String[] args) {
-        MyInterface mi = new HelloWorld();
+    public static void main(String[] args) throws Exception {
+       final MyInterface mi = new HelloWorld();
         mi.xyz();
         mi.abc();
     }
