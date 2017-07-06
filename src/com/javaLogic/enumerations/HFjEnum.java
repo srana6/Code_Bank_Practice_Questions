@@ -15,7 +15,6 @@ enum Card{
 public class HFjEnum {
 
 
-
     /**
      *
      * Make a class of type enum and definte Constants the class contains
@@ -56,6 +55,13 @@ public class HFjEnum {
 
         }
 
+        /**
+         *Enum constructor can be overloaded
+         */
+        Names(String instrument, int x, int...args ){
+            this.instrument=instrument;
+
+        }
         public String getInstrument(){
             return this.instrument;
         }
@@ -77,5 +83,7 @@ public class HFjEnum {
             System.out.println();
         }
 
+       Names[] arrNames = Names.values();
+        System.out.println(arrNames[1]);
     }
 }

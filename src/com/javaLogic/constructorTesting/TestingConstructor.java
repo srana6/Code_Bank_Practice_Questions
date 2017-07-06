@@ -12,6 +12,10 @@ package com.javaLogic.constructorTesting;
  */
 class TestingConstructor1 {
 
+   /* public TestingConstructor1(){
+        System.out.println("Here1");
+    }*/
+
     /**
      * Constructor of class1
      */
@@ -23,8 +27,12 @@ class TestingConstructor1 {
 public class TestingConstructor{
 
     static{
-        System.out.println("First Thing to Execute");
+        System.out.println();
     }
+
+   /* public TestingConstructor(){
+        System.out.println("Here");
+    }*/
 
     /**
      * Calling constructor of class1
